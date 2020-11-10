@@ -14,7 +14,6 @@ stages:
           vmimage: windows-latest
         steps:
         - task: AzureResourceManagerTemplateDeployment@3
-        displayName: "Check"
           inputs:
             deploymentScope: 'Resource Group'
             azureResourceManagerConnection: 'AzureConnection'
